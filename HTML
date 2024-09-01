@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Campus</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey for Campus</h1>
+    <p id="description">This survey aims to improve facilities and infrastructure</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter Your Name: </label>
+        <input id="name" type="text" placeholder="Full Name" required>
+
+        <label id="email-label">Enter Your Email: </label>
+        <input id="email" type="email" placeholder="Campus Email" required>
+
+        <label id="number-label">Enter Your Age: </label>
+        <input id="number" type="number" placeholder="0812345679" min="17" max="65" required>
+      </fieldset>
+      <fieldset>
+        <label>Whay is Your Role ?</label>
+        <label for="student-role"><input id="student-role" class="inline" type="radio" name="role-type" value="student" checked> Student</label>
+        <label for="worker-role"><input id="worker-role" class="inline" type="radio" name="role-type" value="worker"> Lecture/Staff</label>
+        
+        <label>What Semester are You in ? (only student)</label>
+        <select id="dropdown">
+          <option value="">Select Semester</option>
+          <option value="1">First</option>
+          <option value="2">Second</option>
+          <option value="3">Third</option>
+          <option value="4">Fourth</option>
+          <option value="5">Fifth</option>
+          <option value="6">Sixth</option>
+          <option value="7">Seventh</option>
+          <option value="8">Eighth</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label>What buildings do you often use ?</label>
+        <label for="survey-form"><input id="survey-form" type="checkbox" class="inline" value="a" required>Building A</label>
+        <label for="survey-form"><input id="survey-form" type="checkbox" class="inline" value="a" required>Building B</label>
+        <label for="survey-form"><input id="survey-form" type="checkbox" class="inline" value="a" required>Building C</label>
+
+        <label for="survey-form"><input id="survey-form" type="checkbox" class="inline" value="a" required>Laboratory A</label>
+        <label for="survey-form"><input id="survey-form" type="checkbox" class="inline" value="a" required>Laboratory B</label>
+
+        <label for="criticism-suggestions">criticism and suggestions:
+          <textarea id="criticism-suggestions" rows="3" cols="30" placeholder="the building's toilets are dirty..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
